@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    </main>
+
+    <dialog id="fruitDialog">
+        <h1 id="dialogText">This is a dialog</h1>
+        <form onsubmit="submitHandler()" method="dialog">
+            <input id="inputId" type="number" hidden>
+            <input id="dialogQty" type="number" placeholder="Enter Quantity" max="">
+            <input type="submit" >
+        </form>
+
+        <button onclick="fruitDialog.close()">Close</button>
+    </dialog>
+</body>
+
+<script src="main.js"></script>
+</html>
